@@ -15,7 +15,7 @@ router.get('/speakers', function(req, res){
       <img src= "./images/citi.jpg" alt="baseball" style="height: 300px;">
       <p>${item.summary}</p>
     </li>
-
+    <script src="/reload/reload.js"></script>
     `;
   });
   res.send(`
@@ -37,6 +37,7 @@ router.get('/speakers/:speakerid', function(req, res){
     <h1>Welcome</h1>
     <img src= "./images/citi.jpg" alt="baseball" style="height: 300px;">
     <p>${speaker.summary}</p>
+    <script src="/reload/reload.js"></script>
     `);
 });
 
